@@ -1,7 +1,8 @@
 set(BIN_NAME bitrateCalc)
 
 set(SRC_LIST
-  ${CMAKE_SOURCE_DIR}/bitrateCalc.cpp
+	${CMAKE_SOURCE_DIR}/bitrateDebug.cpp
+  	${CMAKE_SOURCE_DIR}/bitrateCalc.cpp
 )
 
 # add include files 
