@@ -7,7 +7,7 @@ Study and Implementation Bit-Rate Calculation of Transport Stream
 * **Yun Hong Min** - *Initial work* - [PurpleBooth](https://github.com/minyunhong)
 * **Hee Soon Kim** - *Coworker work* - [PurpleBooth](https://github.com/heesoon)
 
-See also the list of [contributors](https://github.com/minyunhong/project/heesoon) who participated in this project.
+See also the list of [contributors](https://github.com/minyunhong/bitrateCalc/heesoon) who participated in this project.
 
 ## License
 Free
