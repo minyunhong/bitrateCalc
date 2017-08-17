@@ -4,7 +4,8 @@ Study and Implementation Bit-Rate Calculation of Transport Stream
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Yun Hong Min** - *Initial work* - [PurpleBooth](https://github.com/minyunhong)
+* **Hee Soon Kim** - *Coworker work* - [PurpleBooth](https://github.com/heesoon)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
