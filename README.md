@@ -7,5 +7,11 @@ Study and Implementation Bit-Rate Calculation of Transport Stream
 * **Yun Hong Min** - *Initial work* - [link](https://github.com/minyunhong)
 * **Hee Soon Kim** - *Coworker work* - [link](https://github.com/heesoon)
 
-## License
-Free
+## Usage
+
+* `cmake ./`;
+
+* `make`
+
+* `execute debug menu`.
+
