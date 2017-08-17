@@ -1,4 +1,4 @@
-# Project Title
+# Bit-rate calculator
 
 One Paragraph of project description goes here
 
