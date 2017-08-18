@@ -31,6 +31,7 @@ For more information, please refer to <http://unlicense.org>
 
 #include "bitrateDebug.h"
 #include "bitrateCalc.h"
+#include "tsfilter.h"
 
 // implementation of debug functions
 namespace debug_bitrateCalc {
@@ -74,40 +75,17 @@ namespace debug_bitrateCalc {
 	}
 
 	void debug_bitrateCalc_file() {
-
-		std::ifstream ifs;
-		std::string fpath;
-
-		std::cout << "enter ts file path : ";
-		//std::cin >> fpath;
-		std::getline(std::cin, fpath);
-		if(fpath.empty()) {
-			fpath = "/home/hskim/stream/secureMedia/fantasy_clear.ts";
-		}
-		std::cout << std::endl;
-
-		ifs.open(fpath, std::ifstream::in|std::ifstream::binary);
-		if(!ifs.is_open()) {
-			std::cout << "file open fail..." << std::endl;
-			return;
-		}
-
-		// read ts data
-		char *buffer = new char[188];
-		while(!ifs.eof()) {
-			ifs.read(buffer, 188);
-		}
-		delete [] buffer;
-
-		// TODO : add here bitrate calcuation code
-
-		ifs.close();
-
-		std::cout << "finish bitrate calculation from file .." <<  std::endl;
+		std::unique_ptr<CTsFilter> up = CTsFilterFactory::createNewTsFilter(MediaType::MEDIA_TYPE_FILE);
+		up->openMedia();
+		up->readMedia();
+		up->closeMedia();
 	}
 
 	void debug_bitrateCalc_ip() {
-		// TODO;
+		std::unique_ptr<CTsFilter> up = CTsFilterFactory::createNewTsFilter(MediaType::MEDIA_TYPE_IP);
+		up->openMedia();
+		up->readMedia();
+		up->closeMedia();
 	}
 
 	void debug_bitrateCalc_exit() {
