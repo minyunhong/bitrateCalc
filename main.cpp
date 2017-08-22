@@ -21,4 +21,11 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <http://unlicense.org>
 */
 
-#include "bitrateCalc.h"
+#include "bitrateDebug.h"
+
+using namespace debug_bitrateCalc;
+
+int main() {
+	debug_bitrateCalc_main();
+	return 0;
+}
